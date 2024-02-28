@@ -1,0 +1,76 @@
+body{
+    height: 100vh;
+    background-color: black;
+    background-image: url("dictionary.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    padding: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    width: 450px;
+    padding: 18px;
+    background-color: #fff;
+    box-shadow: 1px 3px 3px 3px rgb(215, 215, 215);
+    border-radius: 6px;
+    position: relative;
+    top: 43px;
+    margin: auto;
+}
+.container input{
+    width: 70%;
+    padding: 12px;
+    height: 15px;
+    border: none;
+    background-color: aquamarine;
+    font-size: 18px;
+    border-radius: 4px;
+    outline: none;
+}
+.searchBar{
+    display: flex;
+    gap: 4px;
+}
+button{
+    width: 80px;
+    font-size: 16px;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+
+}
+.text{
+    padding: 22px;
+    margin-top: 15px;
+}
+.text p{
+    margin-top: 18px;
+}
+.text a{
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: orange;
+    color: rgb(16, 16, 15);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    top: 16px;
+}
+button:hover{
+    color: white;
+    background-color: rgb(43, 38, 38);
+}
+
+@media screen and (max-width:600px) {
+    .container{
+        width: 80%;
+    }
+}
