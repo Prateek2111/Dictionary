@@ -8,6 +8,14 @@ const getData = async function(searchValue){
 
     let data = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${searchValue}`);
     let response = await data.json();
+    
+    if(response.title == "No Definitions Found" ){
+        let div = document.createElement('div');
+        div.classList.add('detail');
+        div.innerHTML = `<h2>No word Found</h2>`;
+        document.querySelector('.text').appendChild(div);
+    }
+    
     console.log(response);
     let div = document.createElement('div');
     div.classList.add('detail');
